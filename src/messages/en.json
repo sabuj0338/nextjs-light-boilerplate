@@ -1,0 +1,34 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search...",
+    "noResults": "No results found.",
+    "confirmDelete": "Are you sure you want to delete this?",
+    "confirmDeleteDescription": "This action cannot be undone.",
+    "actions": "Actions"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Enter your credentials to sign in"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "settings": "Settings"
+  },
+  "errors": {
+    "notFoundMessage": "The page you're looking for doesn't exist.",
+    "backToHome": "Back to Dashboard",
+    "somethingWentWrong": "Something went wrong",
+    "tryAgain": "Try Again"
+  }
+}
