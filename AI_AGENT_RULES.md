@@ -17,7 +17,6 @@ Your primary goal is to maintain the project architecture, coding patterns, and 
 - **DO NOT modify** any generated Shadcn UI components in `src/components/ui/` unless explicitly requested by the user. Use them as-is.
 - **NEVER use `useState` + `useEffect`** for data fetching. Always use React Query hooks in `src/hooks/api/`.
 - **NEVER use `localStorage`** for authentication tokens. Use secure server-side, HttpOnly cookies (`src/lib/auth.ts`).
-- **NEVER import from `next/navigation`** for routing. Always use the localized router from `@/i18n/navigation`.
 - **NEVER hardcode UI strings**. Always use `next-intl` messages and `useTranslations`.
 - **NEVER store server data in Zustand**. Zustand is strictly for Global UI State (e.g., sidebar toggles, modals) and lightweight Auth State (with `persist` middleware).
 
@@ -55,7 +54,6 @@ When asked to create a new feature, follow this exact sequence:
 - ❌ `useEffect` + `fetch` for data -> **✅ use React Query hooks**
 - ❌ `localStorage` for tokens -> **✅ use HttpOnly cookies**
 - ❌ Manual try/catch in every form -> **✅ use `createFormSubmitHandler()`**
-- ❌ `next/navigation` imports -> **✅ use `@/i18n/navigation`**
 - ❌ Hardcoded UI strings -> **✅ use `next-intl` messages**
 - ❌ Editing ShadCN-generated files -> **✅ use `shadcn CLI` or use as-is**
 - ❌ Building custom filter UIs per page -> **✅ use `DynamicSearchControls`**
